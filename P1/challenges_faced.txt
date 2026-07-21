@@ -1,0 +1,11 @@
+Code 1: Bakery Rotation
+My Difficulty: I tried to manually move items left one by one using loops. It caused index out-of-bounds crashes, and looping for thousands of hours was way too slow.
+How I Solved It: I used hours % size to find the exact number of needed shifts. Then, I used (i + rotate_index) % size to print the elements directly in their new positions without moving them in memory.
+
+Code 2: Library Book Duplicates
+My Difficulty: My nested loops found duplicate IDs multiple times, so the code printed the same duplicate book ID over and over. I did not know how to stop it without using advanced data structures.
+How I Solved It: I created a boolean array already_printed. Once I found and printed a duplicate book, I ran a loop ahead to mark all future copies of that ID as true so the main loop would skip them.
+
+Code 3: Longest Word
+My Difficulty: My code checked words only when it hit a space. Because sentences do not end with a space, my program completely missed the very last word.
+How I Solved It: I changed the loop limit to i <= text.length(). This forces the loop to run one extra time at the very end of the string, which successfully triggers the check for the final word.
