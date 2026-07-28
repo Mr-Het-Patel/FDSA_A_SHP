@@ -9,15 +9,16 @@ int main(){
     cin>>x;
     while(start<=end){
         int mid=(start +end)/2;
-    if(arr[mid]==x){
-        cout<<"element found at:"<<start+1<<endl;
-        break;
+        if(arr[mid]==x){
+            cout<<"element found at:"<<mid+1<<endl;
+            break;
+        }
+        else if(arr[mid]>x){
+            end=mid-1;
+        }
+        else if(arr[mid]<x){
+            start=mid+1;
+        }
     }
-    else if(arr[mid]>x){
-        end=mid-1;
-    }
-    else if(arr[mid]<x){
-        start=mid+1;
-    }
-}
+    return 0;
 }
