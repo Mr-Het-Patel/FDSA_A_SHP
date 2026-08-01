@@ -1,0 +1,17 @@
+Challenges faced while implementing P3 (p_3.1, p_3.2, p_3.3)
+
+p_3.1 - Bubble Sort
+- Challenge: Ensuring the nested loop bounds are correct so the largest elements "bubble" to the end without accessing out-of-range indexes.
+- Solution: Use loops for i in [0..n-2] and j in [0..n-i-2]. Tested with small arrays and printed results.
+
+p_3.2 - Insertion Sort
+- Challenge: The original file had an empty loop placeholder. Common pitfalls are off-by-one errors and failing to move elements correctly when shifting.
+- Solution: Implemented the standard insertion algorithm: iterate i from 1..n-1, store key, shift larger elements right, then place key at arr[j+1]. Verified on the provided test array.
+
+p_3.3 - Selection Sort
+- Challenge: The provided code compared the wrong direction (looking for max instead of min) and attempted an incorrect assignment after swapping.
+- Solution: Implemented selection to find the minimum element index in the unsorted portion, then swap with the current i. Added a guard to skip swap when min index equals i.
+
+General notes:
+- Tested each program by printing the sorted arrays and ensuring no out-of-bounds accesses.
+- Kept code simple and self-contained for easy compilation with a standard C++ compiler.

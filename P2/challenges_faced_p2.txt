@@ -1,0 +1,13 @@
+Challenges faced while implementing P2 programs
+
+p_2.1 - Search vehicle registration number
+- Challenge: Handling string comparisons and iterating through records reliably.
+- Solution: Ensured proper string equality checks and boundary-safe loops.
+
+p_2.2 - Binary search program
+- Challenge: Off-by-one mistakes and mid index calculation causing infinite loops or incorrect results.
+- Solution: Used standard mid = low + (high - low) / 2 and correct loop invariants; added bounds checks.
+
+General notes for P2:
+- Validated user input where applicable and printed clear messages when elements were not found.
+- Tested corner cases like empty arrays and single-element arrays.
