@@ -1,0 +1,12 @@
+Challenges faced while implementing P4 programs
+p4.1 - Singly linked list insertion
+- Challenge: Risk of losing the rest of the list when inserting at the beginning or middle, and handling pointer updates in the wrong sequence
+- Solution: Structured the assignment sequence carefully by linking the new node to the next section first before updating the preceding node's connection.
+
+p4.2 - Singly linked list deletion and reversal
+- Challenge: Potential segmentation faults or null pointer dereferences while searching for a specific node to delete, and tracking three moving pointers during structural reversal.
+- Solution: Used a look-ahead pointer condition (p1->next->val) for safe deletion and implemented a strict, step-by-step layout using prev, p3, and next_node pointers to reverse connections without orphan segments.
+
+General notes for P4:
+- Maintained a clean visual format for testing output using dedicated traversal loops.
+- Ensured proper memory management practices by freeing up memory after removing elements from the heap.
