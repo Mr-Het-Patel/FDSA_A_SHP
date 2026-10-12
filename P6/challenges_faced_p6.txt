@@ -1,0 +1,27 @@
+Challenges faced while implementing P6 programs
+
+p6.1 - Tray stack management using stack
+Challenge: Preventing stack overflow when attempting to place more trays than the maximum stack capacity allows.
+Solution: Implemented a capacity check before pushing a new tray onto the stack and displayed an error message when the stack was full.
+
+Challenge: Handling tray removal when the stack is empty and avoiding invalid pop operations.
+Solution: Used the empty() function to verify that the stack contained elements before removing a tray and displayed an appropriate error message when necessary.
+
+Challenge: Displaying the correct tray at the top of the stack after every insertion and removal operation.
+Solution: Used the top() function after successful push and pop operations, and displayed "Empty" when the last tray was removed.
+
+p6.2 - Browser history navigation using stack
+Challenge: Managing page navigation while ensuring that the homepage always remains available in the history.
+Solution: Stored visited pages in a stack and only allowed the back operation when more than one page existed in the history.
+
+Challenge: Preventing users from navigating back beyond the homepag
+Solution: Added a condition to check the stack size before performing a pop operation and displayed an error message when already at the homepage.
+
+Challenge: Maintaining the correct current page after visiting new pages and moving back through history.
+Solution: Used stack operations such as push(), pop(), and top() to update and display the current page accurately after each action.
+
+General notes for P6:
+Applied the Last In First Out (LIFO) principle of the stack data structure to manage trays and browser history efficiently.
+Implemented boundary condition checks to ensure stable execution during insertion and deletion operations.
+Used meaningful output messages to make stack operations easier to test and verify.
+Performed multiple test cases to validate stack behavior under normal, overflow, and underflow conditions
