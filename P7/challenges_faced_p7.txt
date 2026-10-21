@@ -1,1 +1,27 @@
-.
+Challenges faced while implementing P7 programs
+
+p7.1 - Token queue using circular array
+Challenge: Preventing queue overflow when attempting to add more tokens than the queue capacity allows.
+Solution: Implemented a count check before inserting a new token and displayed an error message when the queue was full.
+
+Challenge: Handling token removal when the queue is empty and avoiding invalid dequeue operations.
+Solution: Used a count==0 condition to verify that the queue contained elements before serving a token and displayed an appropriate error message when necessary.
+
+Challenge: Displaying the correct front token after every insertion and removal operation.
+Solution: Used circular indexing with rear = (rear + 1) % n and front = (front + 1) % n, and displayed the current front token after successful operations.
+
+p7.2 - Patient queue using linked list
+Challenge: Managing patient arrivals while maintaining correct queue order for service.
+Solution: Inserted each new patient at the rear end of the linked list and updated the rear pointer to keep the queue connected.
+
+Challenge: Preventing invalid service operations when no patients were waiting.
+Solution: Checked whether the front pointer was NULL before attending a patient and displayed an error message when the queue was empty.
+
+Challenge: Maintaining the correct next patient after serving the current one.
+Solution: Used the front pointer to move to the next node, deleted the served patient, and displayed the next front patient or "Queue is empty" when the last patient was removed.
+
+General notes for P7:
+Applied the First In First Out (FIFO) principle of the queue data structure to manage tokens and patients efficiently.
+Implemented boundary condition checks to ensure stable execution during enqueue and dequeue operations.
+Used meaningful output messages to make queue operations easier to test and verify.
+Performed multiple test cases to validate queue behavior under normal, overflow, and underflow conditions
