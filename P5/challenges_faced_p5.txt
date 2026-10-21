@@ -1,1 +1,7 @@
-.
+Code 1: Music Playlist Operations
+My Difficulty: I kept losing track of the head and tail pointers when inserting a song at the beginning or after a target song. The next and prev links became inconsistent, which made the playlist appear in the wrong order.
+How I Solved It: I connected the new node carefully by updating both the previous and next pointers before changing the head or tail. I also handled edge cases like inserting after the last node and removing the only remaining song so the list stayed valid.
+
+Code 2: Circular Student Group
+My Difficulty: I got confused about where to reconnect links when a student left the circular list, especially when the student was the first node or when the list had only one member.
+How I Solved It: I tracked the previous node and used the condition current == firstStudent to handle the start-of-list case. Then I rewired the nextStudent and prevStudent pointers in both the singly and doubly circular lists so the circle remained connected.
