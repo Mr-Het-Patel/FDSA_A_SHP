@@ -1,1 +1,7 @@
-.
+Code 1: Binary Search Tree Traversal
+My Difficulty: I initially printed values in the wrong order because I forgot the recursive rule of left subtree, root, right subtree. This produced a misleading sequence.
+How I Solved It: I used inorder(root->left), cout << root->data, inorder(root->right) to follow the correct BST traversal. I also used preorder and postorder to print values before and after the children so each traversal order was correct.
+
+Code 2: BST Book Codes
+My Difficulty: I had trouble inserting numbers while preserving the BST property, especially when values were repeated or when the tree became unbalanced.
+How I Solved It: I used recursive insertion: if x < root->data go left, else if x > root->data go right, and ignore duplicates. Then I called inorder traversal to confirm the sorted order of the book codes.
