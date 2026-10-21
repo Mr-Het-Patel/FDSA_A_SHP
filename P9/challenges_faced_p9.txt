@@ -1,1 +1,3 @@
-.
+Code 1: Graph Traversal
+My Difficulty: I kept visiting nodes multiple times because the visited array was not reset properly before BFS, and DFS had trouble handling disconnected nodes.
+How I Solved It: I reset visited for each traversal and inserted neighbors into the queue only when they were unvisited. This ensured each vertex was processed once in the correct DFS and BFS order.
