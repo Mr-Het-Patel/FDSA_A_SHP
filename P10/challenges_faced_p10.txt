@@ -1,1 +1,11 @@
-.
+Code 1: Parking Lot Linear Probing
+My Difficulty: I struggled with collisions because when a parking slot was already filled, I kept checking the same slot again and again without moving forward correctly.
+How I Solved It: I used a while loop that moved to the next index and counted tries until a free slot was found or all 10 slots were checked. This prevented infinite loops and showed when the parking lot was full.
+
+Code 2: Shelf Hashing
+My Difficulty: I initially stored only one value per slot and lost data during collisions. The program also became confusing when multiple codes mapped to the same bucket.
+How I Solved It: I used an array of vectors, where each hash bucket stored a list of codes. This allowed chaining and kept every code in its proper hash group.
+
+Code 3: Double Hashing Table
+My Difficulty: I had trouble computing the second hash value and handling rehashing logic when a slot was occupied. Some IDs were left unplaced because the probing step did not move correctly.
+How I Solved It: I used h2 = 7 - (id % 7) and then probed with (h1 + j * h2) % 10 until an empty slot appeared. If no slot was found, I printed a message showing that the table was full for that ID.
