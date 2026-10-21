@@ -24,4 +24,4 @@ General notes for P6:
 Applied the Last In First Out (LIFO) principle of the stack data structure to manage trays and browser history efficiently.
 Implemented boundary condition checks to ensure stable execution during insertion and deletion operations.
 Used meaningful output messages to make stack operations easier to test and verify.
-Performed multiple test cases to validate stack behavior under normal, overflow, and underflow conditions
+Performed multiple test cases to validate stack behavior under normal, overflow, and underflow conditions.
